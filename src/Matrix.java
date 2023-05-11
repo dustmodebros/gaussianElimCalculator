@@ -7,7 +7,7 @@ public class Matrix {
 
 	// should multiply the 1st index of in by Xn/X1 of each of the other indices of in
 	public void triangulate() {
-		for (int pivot = 0; pivot <in.size()-2; pivot++) {
+		for (int pivot = 0; pivot <in.size()-1; pivot++) {
 			ArrayList<ArrayList<Double>> out = new ArrayList<>();
 			ArrayList<Double> pivotRow = in.get(pivot);
 			Double first = pivotRow.get(pivot);

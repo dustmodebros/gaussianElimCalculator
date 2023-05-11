@@ -10,10 +10,7 @@ public class Main {
 		ArrayList<ArrayList<Double>> temp = new ArrayList<>(Arrays.asList(temp1,temp2,temp3, temp4));
 		Matrix mat = new Matrix(temp);
 		System.out.println(mat);
-
-		for (int i=0; i<temp.size()-1; i++){
-			mat.triangulate();
-		}
+		mat.triangulate();
 		System.out.println(mat);
 	}
 }
