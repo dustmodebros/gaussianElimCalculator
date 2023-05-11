@@ -12,7 +12,7 @@ public class Main {
 		System.out.println(mat);
 
 		for (int i=0; i<temp.size()-1; i++){
-			mat.triangulate(i);
+			mat.triangulate();
 		}
 		System.out.println(mat);
 	}
