@@ -6,7 +6,7 @@ public class Matrix {
 	}
 
 	// should multiply the 1st index of in by Xn/X1 of each of the other indices of in
-	public static ArrayList<ArrayList<Double>> triangulate(ArrayList<ArrayList<Double>> in, int pivot){
+	public void triangulate(int pivot){
 		ArrayList<ArrayList<Double>> out = new ArrayList<>();
 		ArrayList<Double> pivotRow = in.get(pivot);
 		Double first = pivotRow.get(pivot);
@@ -26,7 +26,12 @@ public class Matrix {
 				out.add(temp);
 			}
 		}
-		return out;
+		this.in = out;
+	}
+
+	@Override
+	public String toString(){
+		return this.in.toString();
 	}
 
 
