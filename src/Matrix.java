@@ -30,7 +30,7 @@ public class Matrix {
 	}
 
 	@Override
-	public String toString(){
+	public String toString(){ //override toString to make println() work
 		return this.in.toString();
 	}
 
