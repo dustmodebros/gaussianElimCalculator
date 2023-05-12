@@ -39,7 +39,7 @@ public class Matrix {
 		for (int j=out.size()-2; j>=0; j--) { //iterate through the arrays from bottom to top
 			ArrayList<Double> current = in.get(j);
 			for (int i = 0; i < out.size(); i++) {
-				current.set(out.size(),current.get(out.size())-(current.get(i)*out.get(i)));
+				current.set(out.size(),current.get(out.size())-(current.get(i)*out.get(i))); //lol
 			}
 			out.set(j, current.get(out.size())/current.get(j));
 		}
@@ -50,6 +50,4 @@ public class Matrix {
 	public String toString(){ //override toString to make println() work
 		return this.in.toString();
 	}
-
-
 }
