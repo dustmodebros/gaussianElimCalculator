@@ -6,7 +6,7 @@ public class Matrix {
 	}
 
 	public void triangulate() { //triangulates :)
-		for (int pivot = 0; pivot <in.size()-1; pivot++) {
+		for (int pivot = 0; pivot < in.size() - 1; pivot++) {
 			ArrayList<ArrayList<Double>> out = new ArrayList<>();
 			ArrayList<Double> pivotRow = in.get(pivot);
 			Double first = pivotRow.get(pivot);
